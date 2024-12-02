@@ -1,0 +1,4 @@
+curl  -X GET \
+  'http://localhost:8083/connectors' \
+  --header 'Accept: */*' \
+  --header 'User-Agent: curl'

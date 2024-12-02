@@ -1,0 +1,20 @@
+curl  -X POST \
+  'http://localhost:8083/connectors/' \
+  --header 'Accept: */*' \
+  --header 'User-Agent: curl' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+    "name": "inventory-connector",  
+    "config": {
+      "connector.class": "io.debezium.connector.postgresql.PostgresConnector", 
+      "database.hostname": "debezium-postgres", 
+      "database.port": "5432",
+      "database.user": "postgres",
+      "database.password": "debezium",
+      "database.dbname" : "postgres", 
+      "topic.prefix": "dbserver1", 
+      "table.include.list": "inventory.customers",
+      "plugin.name": "decoderbufs"
+    }
+}
+'
