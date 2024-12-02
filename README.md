@@ -1,3 +1,5 @@
+debezium(postgres)のぷろとたいぷ
+
 ## GUI
 
 [kafka-ui](http://localhost:8081/)
