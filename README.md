@@ -444,4 +444,3 @@ $ docker run -it --rm --name kafka-ui --network debezium_network -p 8081:8080 -e
    - https://www.postgresql.org/docs/14/logicaldecoding-explanation.html
    - https://www.postgresql.org/docs/current/protocol-logicalrep-message-formats.html
    - サンプルはdecoderbufs、postgresql10からはもとからプラグイン入ってるっぽいpgoutput
- - 
